@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+<meta charset ="utf-8">
+<meta name="viewport" content="width-device-width", initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="formulario2.css" media ="screen">
+<title>Ficha Cadastral</title>
+</head>
+<body>
+<div class="campo">
+<h1 id="titulo">Cadastro de Players</h1>
+<p id="subtitulo">Complete suas informações</p>
+<br>
+</div>
+<form class="formularioo" id="formularioo">
+<fieldset class="grupo">
+  <div>
+<label for="Nick"><b>Nick</b></label>
+<input type="text" name="Nick" id="Nick" required>
+</div>
+<div class="campo">
+  <label for="Nome"><b>Nome</b></label>
+  <input type="text" name="Nome" id="Nome" required>
+</div>
+<label for="email"><b>email</b></label>
+<input type="email" name="email" id="email" required>
+</fieldset>
+<div class="campo">
+<label>Qual lane você joga?</label>
+<label>
+  <input type="radio" name="role" value="Top"checked>Top
+</label>
+<label>
+  <input type="radio" name="role" value="Jungler">Jungler
+</label>
+<label>
+  <input type="radio" name="role" value="Mid">Mid
+</label>
+<label>
+  <input type="radio" name="role" value="ADC">ADC
+</label>
+<label>
+  <input type="radio" name="role" value="Supp">Supp
+</label>
+</div>
+<div class="campo">
+  <label>Elo</label>
+  <select id="Elo">
+    <option selected disable value="">Selecione...</option>
+    <option>Ferro</option>
+    <option>Bronze</option>
+    <option>Prata</option>
+    <option>Ouro</option>
+    <option>Platina</option>
+    </option>Diamante</option>
+    <option>Mestre</option>
+    <option>Challenger</option>
+  </select>
+</div>
+<fieldset class="grupo">
+<div class="check">
+<label><b>Selecione um time de seu interesse</b></label><br><br>
+<input type="checkbox"id="time1"name="time1" value="pain">
+<label for="time1">PaiN</label>
+<input type="checkbox" id="time2" name="time2"value="keyd">
+<label for="time2">Keyd</label>
+<input type="checkbox" id="time3" name="time3" value="kabum">
+<label for="time3">Kabum</label>
+<input type="checkbox" id="time4" id="time4" value="Flamengo">
+<label for ="time4">Flamengo</label>
+<input type="checkbox" id="time5" name="time5" value="PRG">
+<label for="time5">PRG</label>
+<input type="checkbox" id="time6" name="time6" value="CNB">
+<label for="time6">CNB</label>
+<input type="checkbox" id="time7" name="time7" value="INTZ">
+<label for"time7">INTZ</label>
+</div>
+</fieldset>
+<div class="campo">
+  <br>
+  <label><b>Descreva seu estilo de jogo</b></label>
+  <textarea row="6" style="width:26em" id="gameplay" name="gameplay"></textarea>
+</div>
+<button class="botao" type="submit">Enviar</buton>
+
+</form>
+</body>
+</html>
